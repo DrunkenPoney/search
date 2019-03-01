@@ -1,0 +1,30 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "CLI utility to search a string in files",
+  "main": "src/index.js",
+  "files": [
+    "src/**/*"
+  ],
+  "bin": {
+    "search": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "pkg . --out-path bin"
+  },
+  "author": {
+    "name": "Elie Grenon (DrunkenPoney)",
+    "email": "mrquebec13@gmail.com",
+    "url": "https://github.com/DrunkenPoney"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "prompts": "^2.0.3",
+    "tiny-glob": "^0.2.6"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.7"
+  }
+}
